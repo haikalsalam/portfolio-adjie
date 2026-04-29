@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   title: "Aisyah Portfolio",
   description:
     "Aisyah Adjie - Customer Service Specialist | National Pencak Silat Athlete | Outdoor Enthusiast. Explore my professional journey, skills, and passion for adventure.",
+  icons: {
+    icon: "/img/logo.png",
+    shortcut: "/img/logo.png",
+    apple: "/img/logo.png",
+  },
 };
 
 export default function RootLayout({

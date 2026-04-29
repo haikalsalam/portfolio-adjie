@@ -26,7 +26,7 @@ export default function Footer() {
 
         <div className="flex flex-col items-center md:items-end z-10 gap-4">
           <a
-            href="wa.me/6285719694993"
+            href="http://wa.me/6285719694993?text=Halo%20Aisyah%2C%20saya%20tertarik%20untuk%20berkolaborasi%20atau%20membahas%20peluang%20kerja.%20Bolehkah%20kita%20berbicara%3F"
             className="bg-[#C47D0C] text-white px-6 py-3 rounded-full font-black hover:bg-[#9A6010] transition-colors shadow-[4px_4px_0_0_#F2F7F4] border-2 border-white hover:-translate-y-1 active:translate-y-0 active:shadow-none"
           >
             Let&apos;s Talk! 🤙

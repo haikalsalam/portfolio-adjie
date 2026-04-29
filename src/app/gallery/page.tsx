@@ -48,6 +48,7 @@ export default function Gallery() {
                   src={item.src}
                   alt={item.caption}
                   fill
+                  sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"
                   className="object-cover brightness-90 group-hover:brightness-110 transition-all duration-500"
                 />
               </div>

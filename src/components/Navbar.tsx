@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const navLinks = [
   { name: "Home", href: "/#home" },
@@ -24,7 +25,9 @@ export default function Navbar() {
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
-    return () => { document.body.style.overflow = ""; };
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [isOpen]);
 
   return (
@@ -37,8 +40,17 @@ export default function Navbar() {
         }`}
       >
         <div className="flex justify-between items-center h-14">
-          <Link href="/#home" className="text-lg font-black text-[#0B3D2C] tracking-tight">
-            Aisyah<span className="text-[#C47D0C]">.</span>
+          <Link href="/#home" className="flex items-center gap-3">
+            <Image
+              src="/img/logo.png"
+              alt="Aisyah logo"
+              width={36}
+              height={36}
+              className="rounded-md"
+            />
+            <span className="text-lg font-black text-[#0B3D2C] tracking-tight">
+              Aisyah<span className="text-[#C47D0C]">.</span>
+            </span>
           </Link>
 
           {/* Desktop */}
@@ -72,7 +84,9 @@ export default function Navbar() {
               className="block h-[2px] w-5 bg-[#0B3D2C] origin-center rounded-full"
             />
             <motion.span
-              animate={isOpen ? { opacity: 0, scaleX: 0 } : { opacity: 1, scaleX: 1 }}
+              animate={
+                isOpen ? { opacity: 0, scaleX: 0 } : { opacity: 1, scaleX: 1 }
+              }
               transition={{ duration: 0.15 }}
               className="block h-[2px] w-5 bg-[#0B3D2C] rounded-full"
             />
@@ -122,7 +136,10 @@ export default function Navbar() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0 }}
-                transition={{ delay: navLinks.length * 0.06 + 0.05, duration: 0.2 }}
+                transition={{
+                  delay: navLinks.length * 0.06 + 0.05,
+                  duration: 0.2,
+                }}
                 className="mt-4"
               >
                 <Link
