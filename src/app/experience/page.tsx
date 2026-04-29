@@ -9,16 +9,16 @@ export default function Experience() {
       role: "Server Floor",
       desc: "Focus on customer engagement & POS System management to ensure excellent daily operations.",
       icon: "☕",
-      color: "bg-orange-100",
-      borderColor: "border-orange-300",
+      color: "bg-amber-50",
+      borderColor: "border-amber-200",
     },
     {
       company: "Mie Bandung Kejaksaan",
       role: "Crew Tenant",
       desc: "Maintained service excellence and in-depth menu knowledge to provide the best dining experience.",
       icon: "🍜",
-      color: "bg-yellow-100",
-      borderColor: "border-yellow-400",
+      color: "bg-yellow-50",
+      borderColor: "border-yellow-300",
     },
     {
       company: "PT Sriboga Matahari",
@@ -31,7 +31,7 @@ export default function Experience() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#064E3B] pt-24 pb-20 px-4 sm:px-8 font-sans selection:bg-[#EA580C] selection:text-white">
+    <div className="min-h-screen bg-[#0B3D2C] pt-24 pb-20 px-4 sm:px-8 font-sans selection:bg-[#C47D0C] selection:text-white">
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -41,9 +41,9 @@ export default function Experience() {
           <span className="inline-block px-4 py-1 bg-emerald-800 text-emerald-100 font-bold rounded-full text-sm mb-4 border border-emerald-600">
             Work History 🕰️
           </span>
-          <h1 className="text-5xl md:text-7xl font-black text-[#F5F5F4] tracking-tight">
+          <h1 className="text-5xl md:text-7xl font-black text-[#F2F7F4] tracking-tight">
             Professional <br />
-            <span className="text-[#EA580C] underline decoration-wavy decoration-8 underline-offset-8">
+            <span className="text-[#C47D0C] underline decoration-wavy decoration-8 underline-offset-8">
               Experience
             </span>
           </h1>
@@ -65,7 +65,7 @@ export default function Experience() {
                 <h2 className="text-3xl font-black text-stone-800 mb-2 leading-tight">
                   {exp.company}
                 </h2>
-                <div className="inline-block px-4 py-1.5 bg-white rounded-full font-black text-sm text-[#064E3B] mb-6 shadow-sm border-2 border-stone-200">
+                <div className="inline-block px-4 py-1.5 bg-white rounded-full font-black text-sm text-[#0B3D2C] mb-6 shadow-sm border-2 border-stone-200">
                   {exp.role}
                 </div>
                 <p className="text-stone-700 font-bold text-lg leading-relaxed text-balance">
